@@ -1,16 +1,10 @@
-var numeroUtente, somma;
+var numeroUtente, scelta;
 
 numeroUtente = prompt('Inserisci un numero da 1 a 5');
 console.log(numeroUtente);
+scelta = prompt('Pari o dispari?')
+console.log(scelta);
 
-somma = numeroUtente + numeroGenerato
-
-function generatoreRandom(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-
-}
 
 for ( var i=0 ; i<=5 ; i++ ){
 
@@ -20,9 +14,20 @@ for ( var i=0 ; i<=5 ; i++ ){
 console.log(numeroGenerato);
 
 
-if (somma % 2 != 0) {
-  console.log('Il numero è dispari')
-} else {
-  console.log('Il numero è pari')
 
+
+function generatoreRandom(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+
+}
+
+function pariDispari(numeroUtente, numeroGenerato) {
+  var somma = numeroUtente + numeroGenerato;
+  if (somma % 2 == 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
