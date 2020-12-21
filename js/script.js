@@ -1,16 +1,12 @@
-var numeroUtente, scelta;
+var numeroUtente,numeroGenerato, scelta;
 
-numeroUtente = prompt('Inserisci un numero da 1 a 5');
-console.log(numeroUtente);
 scelta = prompt('Pari o dispari?')
 console.log(scelta);
 
+numeroUtente = prompt('Inserisci un numero da 1 a 5');
+console.log(numeroUtente);
 
-for ( var i=0 ; i<=5 ; i++ ){
-
-  var numeroGenerato = generatoreRandom(1,5);
-}
-
+numeroGenerato = generatoreRandom(1,5);
 console.log(numeroGenerato);
 
 
