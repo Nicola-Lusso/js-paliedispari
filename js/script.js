@@ -1,6 +1,6 @@
 var numeroUtente,numeroGenerato, scelta;
 
-scelta = prompt('Pari o dispari?')
+scelta = prompt('pari o dispari?')
 console.log(scelta);
 
 numeroUtente = parseInt(prompt('Inserisci un numero da 1 a 5'));
@@ -35,8 +35,10 @@ console.log(risultato);
 function pariDispari(numeroUtente, numeroGenerato) {
 
   if (somma % 2 == 0) {
-    return console.log('La somma è pari') ;
+     console.log('La somma è pari') ;
+     return ;
   } else {
-    return console.log('La somma è dispari') ;
+    console.log('La somma è dispari') ;
+    return ;
   }
 }
