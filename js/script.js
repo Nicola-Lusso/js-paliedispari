@@ -23,7 +23,7 @@ console.log(somma);
 var risultato = pariDispari(numeroUtente, numeroGenerato);
 
 
-if (scelta == risultato) {
+if ('pari' == risultato) {
   console.log('hai vinto!');
 } else {
   console.log('ha vinto il computer');
@@ -36,10 +36,11 @@ if (scelta == risultato) {
 function pariDispari(numeroUtente, numeroGenerato) {
 
   if (somma % 2 == 0) {
-     console.log('La somma è pari') ;
-     return ;
-  } else {
-    console.log('La somma è dispari') ;
-    return ;
+
+     return 'pari';
+  }
+  else {
+
+    return 'dispari';
   }
 }
