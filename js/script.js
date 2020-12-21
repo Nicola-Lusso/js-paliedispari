@@ -20,15 +20,16 @@ function generatoreRandom(min, max) {
 var somma = numeroUtente + numeroGenerato;
 console.log(somma);
 
+var risultato = pariDispari(numeroUtente, numeroGenerato);
+
+
 if (scelta == risultato) {
   console.log('hai vinto!');
 } else {
   console.log('ha vinto il computer');
 }
 
-var risultato = pariDispari(numeroUtente, numeroGenerato);
-// risultato = true;
-console.log(risultato);
+
 
 
 
